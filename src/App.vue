@@ -1,10 +1,9 @@
 <template>
   <div id="app">
     <ul id="nav">
-      <li class="nav_left"><router-link to="/">Writing Grid</router-link></li>
-      <li class="nav_right"><router-link to="/listings">Listings</router-link></li>
-      <li class="nav_right"><router-link to="/blog">Blog</router-link></li>
-      <li class="nav_right"><router-link to="/login">Login</router-link></li>
+      <li class="nav_left"><router-link to="/">Home</router-link></li>
+      <li class="nav_right"><router-link to="/writers">Find Writers</router-link></li>
+      <li class="nav_right"><router-link to="/profile">Profile</router-link></li>
     </ul>
     <router-view/>
   </div>
@@ -18,6 +17,10 @@
     text-align: center;
     color: #2c3e50;
   }
+  
+  body{
+    background-color: #9ec3ff;
+  }
 
   #nav {
     padding: 0px;
@@ -29,22 +32,22 @@
 
   #nav a {
     font-weight: bold;
-    padding: 30px;
+    padding: 15px;
     font-size: 20;
     display: block;
     color: white;
     text-align: center;
     text-decoration: none;
   }
-  
+
   .nav_left {
-    float:left;
+    float: left;
   }
-  
-  .nav_right{
-    float:right;
+
+  .nav_right {
+    float: right;
   }
-  
+
   #nav a:hover {
     background-color: #3e53a5;
   }
