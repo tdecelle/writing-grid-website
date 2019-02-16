@@ -2,9 +2,8 @@
   <div id="app">
     <div id="nav">
       <router-link to="/">Writing Grid</router-link>
-      <router-link to="/listings">listings</router-link>
-      <router-link to="/blog">Blog</router-link>
-      <router-link to="/login">Login</router-link>
+      <router-link to="/writers">Find Writers</router-link>
+      <router-link to="/profile">Profile</router-link>
     </div>
     <router-view/>
   </div>
