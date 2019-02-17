@@ -2,8 +2,8 @@
   <div id="app">
     <ul id="nav">
       <li class="nav_left"><router-link to="/">Home</router-link></li>
-      <li class="nav_right"><router-link to="/writers">Find Writers</router-link></li>
       <li class="nav_right"><router-link to="/profile">Profile</router-link></li>
+      <li class="nav_right"><router-link to="/writers">Find Writers</router-link></li>
     </ul>
     <router-view/>
   </div>

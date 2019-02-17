@@ -1,7 +1,6 @@
 <template>
     <div class="searchbar">
       <input type="text" placeholder="Search for Writers">
-      <span class="underline"></span>
     </div>
 </template>
 
@@ -15,57 +14,40 @@ export default class Searchbar extends Vue {}
 
 <style scoped>
 
-.searchbar {
-  background-color: #FF0;
-  border-radius: 2px;
-  box-shadow: 0px 2px 1px 0px #DDD;
-  width: 300px;
-  margin: auto;
-  width: 50%;
-}
+/* .searchbar {
+  box-sizing: border-box;
+  left: 50%;
+  margin: -150px 0 0 -150px;
+  position: absolute;
+  top: 90%;
+} */
 
 .searchbar input {
   background-color: transparent;
   border: none;
-  border-bottom: 1px solid #CCC;
   color: #555;
-  box-sizing: border-box;
   font-family: 'Arvo';
-  font-size: 18px;
-  margin: auto;
-  width: 50%;
-  top: 50%;
-  width: 200px;
+  font-size: 20px;
 }
 
 .searchbar input:hover {
   outline: none;
 }
 
+/* TODO: change this for the default values */
 .searchbar input::-webkit-input-placeholder {
   color: #AAA;
+  box-shadow: 0px 1px 0px 0px #DDD; 
 }
 
+/* TODO: chagne these for the animation values */
 .searchbar input:focus::-webkit-input-placeholder {
-  color: dodgerblue;
+  color: black;
+  box-shadow: 0px 1px 0px 0px black;
 }
 
-.searchbar input:focus+.underline {
+.searchbar input:focus {
   transform: scale(1);
-}
-
-.underline {
-  background-color: dodgerblue;
-  display: inline-block;
-  height: 2px;
-  left: 50px;
-  margin-top: -4px;
-  top: 185px;
-  -webkit-transform: scale(0, 1);
-  transform: scale(0, 1);
-  -webkit-transition: all 0.5s linear;
-  transition: all 0.5s linear;
-  width: 202px;
 }
 
 </style>
