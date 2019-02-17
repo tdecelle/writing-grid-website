@@ -20,10 +20,6 @@
         font-size: 30pt;
     }
 
-    h2 {
-        
-    }
-
     img {
         padding: 20px;
     }
