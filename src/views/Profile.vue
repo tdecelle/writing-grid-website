@@ -31,7 +31,7 @@
         <li class="contribution"> 
           <h3>Blog post</h3>
           Farquaad - Make Duloc Great Again!
-          <p>Excerpt: This proposed wall will keep the fairly tale creatures out of our lands, maintaining enough...</p>
+          <p>Excerpt: This proposed wall will keep the fairy tale creatures out of our lands, maintaining enough...</p>
         </li>
       </ul>
     </div>
