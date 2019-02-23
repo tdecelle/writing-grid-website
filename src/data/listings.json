@@ -1,0 +1,38 @@
+{
+    "listings": [{
+            "company": "New York Times",
+            "title": "Editor",
+            "pay": "50k",
+            "date": "June 2019",
+            "tags": ["Editor", "Spelling"]
+        },
+        {
+            "company": "New York Times",
+            "title": "Journalist",
+            "pay": "70k",
+            "date": "Jan 2020",
+            "tags": ["Politics", "Government", "United States"]
+        },
+        {
+            "company": "The Verge",
+            "title": "Editor",
+            "pay": "55k",
+            "date": "Oct 2019",
+            "tags": ["Tech", "Editor", "News"]
+        },
+        {
+            "company": "Writers Guild",
+            "title": "Editor and Collaborator",
+            "pay": "67k",
+            "date": "June 2019",
+            "tags": ["Business", "Finance"]
+        },
+        {
+            "company": "GamerGirls Inc",
+            "title": "Story Board Writer",
+            "pay": "30k",
+            "date": "March 2019",
+            "tags": ["Game Design", "Story"]
+        }
+    ]
+}

@@ -1,0 +1,45 @@
+{
+    "edits": [{
+        "site": "New York Times",
+        "href": "https://www.nytimes.com/",
+        "original": "there was great hullabaloo",
+        "new": "there was great confusion",
+        "writer": "Bob Johnson"
+    },
+    {
+        "site": "New York Times",
+        "href": "https://www.nytimes.com/",
+        "original": "therefour",
+        "new": "therefore",
+        "writer": "Diana Carpenter"
+    },
+    {
+        "site": "Movie Scripts",
+        "href": "https://www.nytimes.com/",
+        "original": "Once upon a time...",
+        "new": "Many Years ago...",
+        "writer": "Shrek"
+    },
+    {
+        "site": "Washington Post",
+        "href": "https://www.nytimes.com/",
+        "original": "Free speach is essential",
+        "new": "Free speech is essential",
+        "writer": "Billy Dee"
+    },
+    {
+        "site": "Vox",
+        "href": "https://www.nytimes.com/",
+        "original": "It's simply the implication",
+        "new": "It's only an implication",
+        "writer": "Frank Reynolds"
+    },
+    {
+        "site": "Google News",
+        "href": "https://www.nytimes.com/",
+        "original": "Cheese is not a weapon!",
+        "new": "Cheese is a weapon!",
+        "writer": "Bob Johnson"
+    }
+    ]
+}
