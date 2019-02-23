@@ -1,7 +1,7 @@
 <template>
   <div class="writers">
     <Searchbar class="searchbar"/>
-    <List name="asdf;" type="writer" :json="$options.json.writers"/>
+    <List name="" type="writer" :json="$options.json.writers"/>
   </div>
 </template>
 
