@@ -3,35 +3,35 @@
             "name": "Bob Johnson",
             "title": "Freelance Writer",
             "Description": "",
-            "img-url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqdufrHW9FdZWorfcCr4k9n4MYMyupSgPzqzdEIJKBBK-AH555Yw",
+            "imgurl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqdufrHW9FdZWorfcCr4k9n4MYMyupSgPzqzdEIJKBBK-AH555Yw",
             "tags": ["Business", "Finance", "Professional"]
         },
         {
             "name": "Diana Carpenter",
             "title": "Editor",
             "Description": "",
-            "img-url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXwELPQYF5q2FJJ67cMakO1zUylO5HXzB0pVcrq2wBY2SymUt9",
+            "imgurl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXwELPQYF5q2FJJ67cMakO1zUylO5HXzB0pVcrq2wBY2SymUt9",
             "tags": ["Politics", "News", "Current Events"]
         },
         {
             "name": "Billy Dee",
             "title": "Freelance Writer",
             "Description": "",
-            "img-url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9KHZELH6Z28vCI7RRqvyIHH3B_vXy_XYCAPre7pr6pRXWVFKsOw",
+            "imgurl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9KHZELH6Z28vCI7RRqvyIHH3B_vXy_XYCAPre7pr6pRXWVFKsOw",
             "tags": [ "Tech", "Software", "Computers"]
         },
         {
             "name": "Frank Reynolds",
             "title": "Author",
             "Description": "",
-            "img-url": "https://vignette.wikia.nocookie.net/itsalwayssunny/images/7/7b/Frank_%282%29.jpg/revision/latest/scale-to-width-down/180?cb=20110812033432",
+            "imgurl": "https://vignette.wikia.nocookie.net/itsalwayssunny/images/7/7b/Frank_%282%29.jpg/revision/latest/scale-to-width-down/180?cb=20110812033432",
             "tags": [ "Biographies", "History", "Academic"]
         },
         {
             "name": "Shrek",
             "title": "Editor for the Onion",
             "Description": "wat r u doin in my swamp",
-            "img-url": "https://files.kstatecollegian.com/2018/06/Mouth-Alien-Monster-Green-Troll-Martian-Shrek-722415-1.jpg",
+            "imgurl": "https://files.kstatecollegian.com/2018/06/Mouth-Alien-Monster-Green-Troll-Martian-Shrek-722415-1.jpg",
             "tags": [ "Onions", "Donkeys"]
         }
     ]
