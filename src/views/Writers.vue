@@ -1,7 +1,7 @@
 <template>
   <div class="writers">
     <Searchbar class="searchbar"/>
-    <List name="" type="writer" :json="$options.json.writers"/>
+    <List name="" type="writer" :json="writers"/>
   </div>
 </template>
 
@@ -19,6 +19,17 @@ import WritersJSON from '@/data/writers.json';
     List,
   },
   json: WritersJSON,
+  methods: {
+    search: function() {
+      alert(WritersJSON.writers);
+      // this.$data.writers = [this.$data.writers[0]];
+    },
+  },
+  data: () => {
+    return {
+      writers: WritersJSON.writers,
+    };
+  },
 })
 
 export default class Writers extends Vue {}
