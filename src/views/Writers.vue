@@ -1,7 +1,7 @@
 <template>
   <div class="writers">
     <Searchbar class="searchbar"/>
-    <Writer v-bind:key="writer" v-for="writer in $options.json.writers" :name="writer.name"/>
+    <Writer v-bind:key="writer" v-for="writer in $options.json.writers" :writer="writer"/>
   </div>
 </template>
 

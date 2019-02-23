@@ -1,6 +1,8 @@
 <template>
     <div class="writer">
-        <h3>{{ name }}</h3>
+        <img src="../assets/shrek.jpg" alt="Writer's profile picture.">
+        <h2>{{ writer.first }}  {{ writer.last }}</h2>
+        <h4>{{ writer.title }}</h4>
     </div>
 </template>
 
@@ -10,7 +12,7 @@
     @Component
 
     export default class Writer extends Vue {
-        @Prop() private name!: string;
+        @Prop() private writer!: object;
     }
 </script>
 

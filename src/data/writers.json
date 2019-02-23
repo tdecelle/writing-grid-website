@@ -1,7 +1,10 @@
 {
     "writers": [
         {
-            "name": "Max"
+            "first": "Max",
+            "last": "Robinson",
+            "title": "Data Scientist",
+            "imageURL": "https://unsplash.com/photos/nn72hfkvsMc"
         }
     ]
 }
