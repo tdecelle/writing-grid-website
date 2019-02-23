@@ -20,9 +20,9 @@ import WritersJSON from '@/data/writers.json';
   },
   json: WritersJSON,
   methods: {
-    search: function() {
+    search() {
       alert(WritersJSON.writers);
-      // this.$data.writers = [this.$data.writers[0]];
+      this.$data.writers = [this.$data.writers[0]];
     },
   },
   data: () => {
