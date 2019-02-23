@@ -1,7 +1,8 @@
 <template>
   <div class="writers">
     <Searchbar class="searchbar"/>
-    <ListItem v-bind:key="writer" v-for="writer in $options.json.writers" :writer="writer" type="writer"/>
+    <ListItem :key="writer" v-for="writer in $options.json.writers" :item="writer" type="writer"/>
+    <!-- <List name="" type="writer" json="$options.json.writers"/> -->
   </div>
 </template>
 
@@ -9,12 +10,14 @@
 import {Component, Prop, Vue } from 'vue-property-decorator';
 import Searchbar from '@/components/Searchbar.vue';
 import ListItem from '@/components/ListItem.vue';
+import List from '@/components/List.vue';
 import WritersJSON from '@/data/writers.json';
 
 @Component({
   components: {
     Searchbar,
     ListItem,
+    List,
   },
   json: WritersJSON,
 })
