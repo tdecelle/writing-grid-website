@@ -18,9 +18,9 @@
 
 <style scoped>
     .writer {
-        margin: 0px 300px 0px 300px;
-        background-color: #4fc14d;
+        text-decoration:none;
         text-align:left;
+        width: 100%;
     }
 
     img {
