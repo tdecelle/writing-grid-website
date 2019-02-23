@@ -1,6 +1,8 @@
 <template>
-    <div>
-        <h1>{{ listing }}</h1>
+    <div id="listing-item">
+        <h2>{{ listing.company }}</h2>
+        <h3>{{ listing.title }}</h3>
+        <p>{{ listing.pay }} - {{ listing.date }}</p>
     </div>
 </template>
 
@@ -14,5 +16,7 @@
     }
 </script>
 <style scoped>
-
+    #listing-item {
+        text-align: left;
+    }
 </style>
