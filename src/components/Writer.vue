@@ -17,7 +17,8 @@
 <style scoped>
 
 .writer {
-    background-color: cadetblue;
+    margin: 0px 300px 0px 300px;
+    background-color: #4fc14d;
 }
 
 </style>

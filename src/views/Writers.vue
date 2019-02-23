@@ -1,6 +1,6 @@
 <template>
   <div class="writers">
-    <Searchbar/>
+    <Searchbar class="searchbar"/>
     <Writer v-bind:key="writer" v-for="writer in $options.json.writers" :name="writer.name"/>
   </div>
 </template>
@@ -23,5 +23,9 @@ export default class Writers extends Vue {}
 </script>
 
 <style scoped>
+
+.searchbar {
+  margin: 0px 0px 0px 0px;
+}
 
 </style>
