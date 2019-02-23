@@ -1,8 +1,7 @@
 <template>
   <div class="writers">
     <Searchbar class="searchbar"/>
-    <ListItem :key="writer" v-for="writer in $options.json.writers" :item="writer" type="writer"/>
-    <!-- <List name="" type="writer" json="$options.json.writers"/> -->
+    <List name="" type="writer" :json="$options.json.writers"/>
   </div>
 </template>
 
