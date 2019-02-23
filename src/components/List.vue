@@ -1,6 +1,7 @@
 <template>
     <div>
         <h1>{{ name }}</h1>
+        <button @click="click()">Click Me</button>
         <ListItem :key="item" v-for="item in json" :type=type :item="item" />
     </div>
 </template>
@@ -12,6 +13,11 @@
     @Component({
         components: {
             ListItem,
+        },
+        methods: {
+            click: () => {
+                // alert(List.);
+            },
         },
     })
 
