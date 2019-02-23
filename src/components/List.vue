@@ -13,11 +13,6 @@
         components: {
             ListItem,
         },
-        methods: {
-            click: () => {
-                // alert(List.);
-            },
-        },
     })
 
     export default class List extends Vue {
