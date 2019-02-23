@@ -1,20 +1,20 @@
 <template>
   <div class="writers">
     <Searchbar class="searchbar"/>
-    <Writer v-bind:key="writer" v-for="writer in $options.json.writers" :writer="writer"/>
+    <ListItem v-bind:key="writer" v-for="writer in $options.json.writers" :writer="writer" type="writer"/>
   </div>
 </template>
 
 <script>
 import {Component, Prop, Vue } from 'vue-property-decorator';
 import Searchbar from '@/components/Searchbar.vue';
-import Writer from '@/components/Writer.vue';
+import ListItem from '@/components/ListItem.vue';
 import WritersJSON from '@/data/writers.json';
 
 @Component({
   components: {
     Searchbar,
-    Writer,
+    ListItem,
   },
   json: WritersJSON,
 })
