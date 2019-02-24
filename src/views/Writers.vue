@@ -1,6 +1,8 @@
 <template>
   <div class="writers">
-    <Searchbar class="searchbar"/>
+    <Searchbar class="searchbar" v-model="searchterm" v-bind="message"/>
+    <p>{{message}}</p>
+    
     <button @click="search()">Click Me!</button>
     <List name="" type="writer" :json="writers"/>
   </div>
@@ -21,9 +23,24 @@ import WritersJSON from '@/data/writers.json';
   },
   json: WritersJSON,
   methods: {
+    onSearch: function(query, found) {
+        this.$store.dispatch('search', query.value);
+    },
     search() {
-      alert(WritersJSON.writers);
-      this.$data.writers = [this.$data.writers[0]];
+      
+      var writers = [];
+      // var search = this.$refs["#search"]
+      alert(searchterm)
+      
+      // for (var w of this.$data.writers){
+      //   if w.name.includes(search){
+      //     writers.push(w);
+      //   }
+      // }
+      
+      this.$data.writers = writers;
+      
+      wthis.$data.writers = [this.$data.writers[0]];
     },
   },
   data: () => {

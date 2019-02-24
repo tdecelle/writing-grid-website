@@ -26,7 +26,8 @@
     .list{
         background-color: gray;
         border-radius: 25px;
-        border: 2px solid black;
+        /*border: 2px solid black;*/
+        padding: 10px;
         margin: 10px;
     }
 </style>
