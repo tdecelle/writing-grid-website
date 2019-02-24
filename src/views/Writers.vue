@@ -1,6 +1,7 @@
 <template>
   <div class="writers">
     <Searchbar class="searchbar"/>
+    <button @click="search()">Click Me!</button>
     <List name="" type="writer" :json="writers"/>
   </div>
 </template>

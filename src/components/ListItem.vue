@@ -1,5 +1,5 @@
 <template>
-    <div id="back">
+    <div class="back">
         <Writer v-if="type.toLowerCase() == 'writer'" :writer="item"/>
         <Edit v-else-if="type.toLowerCase() == 'edit'" :edit="item"/>
         <Listing v-else-if="type.toLowerCase() == 'listing'" :listing="item"/>
@@ -28,7 +28,7 @@
 </script>
 
 <style scoped>
-    #back {
+    .back {
         background-color: white;
         border-radius: 25px;
         border: 2px solid black;

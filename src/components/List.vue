@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="list">
         <h1>{{ name }}</h1>
         <ListItem :key="item" v-for="item in json" :type=type :item="item" />
     </div>
@@ -23,5 +23,10 @@
 </script>
 
 <style scoped>
-
+    .list{
+        background-color: gray;
+        border-radius: 25px;
+        border: 2px solid black;
+        margin: 10px;
+    }
 </style>
