@@ -24,7 +24,7 @@
 
 <style scoped>
     .list{
-        background-color: gray;
+        background-color: #b7b7b7;
         border-radius: 25px;
         /*border: 2px solid black;*/
         padding: 10px;

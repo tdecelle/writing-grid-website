@@ -1,8 +1,15 @@
 <template>
   <div class="writers">
-    <input class="searchbar" v-model="searchterm"/>
-    <button @click="search()">Click Me!</button>
-    <List name="" type="writer" :json="writers"/>
+    <div class="search">
+      <h2>Search Writers</h2>
+      <input type="text" v-on:keyup="search()" placeholder="Search..."  v-model="searchterm">
+      <p v-model="message">{{message}}</p>
+      <List name="" type="writer" :json="displayed"/>
+    </div>
+    
+    <div class="top">
+      <List name="Top Writers" type="writer" :json="top_writers"/>
+    </div>
   </div>
 </template>
 
@@ -22,16 +29,28 @@ import WritersJSON from '@/data/writers.json';
   json: WritersJSON,
   methods: {
     search() {
-      let filteredWriters = [];
-      alert(this.$data.searchterm);
-      // do your filtering here
-      this.$data.writers = filteredWriters;
+      let writers = [];
+      var searchterm = this.$data.searchterm;
+
+      for (var w of this.$data.writers)
+        if (w.name.toLowerCase().includes(searchterm) && searchterm!='')
+          writers.push(w);
+
+      if(writers.length == 0)
+        this.$data.message = 'No writers found.';
+      else
+        this.$data.message = '';
+
+      this.$data.displayed = writers;
     },
   },
   data: () => {
     return {
       writers: WritersJSON.writers,
+      displayed: [],
+      top_writers: WritersJSON.writers.slice(1, 7).reverse(),
       searchterm: '',
+      message: '',
     };
   },
 })
@@ -41,8 +60,25 @@ export default class Writers extends Vue {}
 
 <style scoped>
 
-.searchbar {
-  margin: 0px 0px 0px 0px;
+input[type=text] {
+  background-color: white;
+  background-repeat: no-repeat;
+  width:50%;
+  margin: 10px;
+}
+
+.search{
+  text-align:center;
+  background-color: #b7b7b7;
+  border-radius: 25px;
+  /*padding: 10px;*/
+  margin-top: 10px;
+  float: left;
+  width: 50%;
+}
+.top{
+  float: right;
+  width: 50%;
 }
 
 </style>

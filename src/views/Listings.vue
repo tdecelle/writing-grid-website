@@ -1,7 +1,15 @@
 <template>
-  <div class="writers">
-    <Searchbar class="searchbar"/>
-    <List name="" type="listing" :json="$options.json.listings"/>
+  <div class="listings">
+    <div class="search">
+      <h2>Search Job Listings</h2>
+      <input type="text" v-on:keyup="search()" placeholder="Search..."  v-model="searchterm">
+      <p v-model="message">{{message}}</p>
+      <List name="" type="listing" :json="displayed"/>
+    </div>
+    
+    <div class="top">
+      <List name="Top Job Listings" type="listing" :json="top_listings"/>
+    </div>
   </div>
 </template>
 
@@ -19,6 +27,33 @@ import ListingsJSON from '@/data/listings.json';
     List,
   },
   json: ListingsJSON,
+  methods: {
+    search() {
+      let listings = [];
+      var searchterm = this.$data.searchterm;
+      
+      for (var l of this.$data.listings)
+        if ((l.company.toLowerCase().includes(searchterm) ||
+            l.title.toLowerCase().includes(searchterm))  && searchterm != '')
+          listings.push(l);
+      
+      if(listings.length == 0)
+        this.$data.message = "No listings found.";
+      else
+        this.$data.message = "";
+  
+      this.$data.displayed = listings;
+    },
+  },
+  data: () => {
+    return {
+      listings: ListingsJSON.listings,
+      displayed: [],
+      top_listings: ListingsJSON.listings.slice(1, 7).reverse(),
+      searchterm: '',
+      message: "",
+    };
+  },
 })
 
 export default class Listings extends Vue {}
@@ -26,8 +61,23 @@ export default class Listings extends Vue {}
 
 <style scoped>
 
-.searchbar {
-  margin: 0px 0px 0px 0px;
+input[type=text] {
+  background-color: white;
+  background-repeat: no-repeat;
+  width:50%;
+  margin: 10px;
+}
+.search{
+  text-align:center;
+  background-color: #b7b7b7;
+  border-radius: 25px;
+  margin-top: 10px;
+  float: left;
+  width: 50%;
+}
+.top{
+  float: right;
+  width: 50%;
 }
 
 </style>
