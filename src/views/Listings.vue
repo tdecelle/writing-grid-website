@@ -3,7 +3,7 @@
     <div class="search">
       <h2>Search Job Listings</h2>
       <input type="text" v-on:keyup="search()" placeholder="Search..."  v-model="searchterm">
-      <p v-model="message">{{message}}</p>
+      <p>{{message}}</p>
       <List name="" type="listing" :json="displayed"/>
     </div>
     
@@ -29,19 +29,20 @@ import ListingsJSON from '@/data/listings.json';
   json: ListingsJSON,
   methods: {
     search() {
-      let listings = [];
-      var searchterm = this.$data.searchterm;
-      
-      for (var l of this.$data.listings)
-        if ((l.company.toLowerCase().includes(searchterm) ||
-            l.title.toLowerCase().includes(searchterm))  && searchterm != '')
+      const listings = [];
+      const searchterm = this.$data.searchterm;
+      for (const l of this.$data.listings) {
+        if (
+          (l.company.toLowerCase().includes(searchterm) || l.title.toLowerCase().includes(searchterm))
+          && searchterm !== '') {
           listings.push(l);
-      
-      if(listings.length == 0)
-        this.$data.message = "No listings found.";
-      else
-        this.$data.message = "";
-  
+        }
+      }
+      if (listings.length === 0) {
+        this.$data.message = 'No listings found.';
+      } else {
+        this.$data.message = '';
+      }
       this.$data.displayed = listings;
     },
   },
@@ -51,7 +52,7 @@ import ListingsJSON from '@/data/listings.json';
       displayed: [],
       top_listings: ListingsJSON.listings.slice(1, 7).reverse(),
       searchterm: '',
-      message: "",
+      message: '',
     };
   },
 })

@@ -29,17 +29,19 @@ import WritersJSON from '@/data/writers.json';
   json: WritersJSON,
   methods: {
     search() {
-      let writers = [];
-      var searchterm = this.$data.searchterm;
+      const writers = [];
+      const searchterm = this.$data.searchterm;
 
-      for (var w of this.$data.writers)
-        if (w.name.toLowerCase().includes(searchterm) && searchterm!='')
+      for (const w of this.$data.writers) {
+        if (w.name.toLowerCase().includes(searchterm) && searchterm !== '') {
           writers.push(w);
-
-      if(writers.length == 0)
+        }
+      }
+      if (writers.length === 0) {
         this.$data.message = 'No writers found.';
-      else
+      } else {
         this.$data.message = '';
+      }
 
       this.$data.displayed = writers;
     },
