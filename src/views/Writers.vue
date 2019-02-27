@@ -71,7 +71,6 @@ input[type=text] {
   text-align:center;
   background-color: #b7b7b7;
   border-radius: 25px;
-  /*padding: 10px;*/
   margin-top: 10px;
   float: left;
   width: 50%;
