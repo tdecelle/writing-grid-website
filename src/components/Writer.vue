@@ -38,7 +38,7 @@
         float: right;
         background-color:blue;
         color:white;
-        cursor: default;
+        cursor: pointer;
         background-color: #2b63bc;
         border-radius: 25px;
         padding: 10px;
