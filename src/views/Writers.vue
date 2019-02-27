@@ -3,7 +3,7 @@
     <div class="search">
       <h2>Search Writers</h2>
       <input type="text" v-on:keyup="search()" placeholder="Search..."  v-model="searchterm">
-      <p v-model="message">{{message}}</p>
+      <p>{{message}}</p>
       <List name="" type="writer" :json="displayed"/>
     </div>
     
