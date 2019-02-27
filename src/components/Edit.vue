@@ -1,6 +1,7 @@
 <template>
     <div>
-        <h1>{{ edit }}</h1>
+        <h3>{{ edit.writer }}</h3>
+        <h5>{{ edit.new }}</h5>
     </div>
 </template>
 
