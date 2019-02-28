@@ -2,7 +2,7 @@
   <div class="writers">
     <div class="search">
       <h2>Search Writers</h2>
-      <input type="text" v-on:keyup="search()" placeholder="Search..."  v-model="searchterm">
+      <input type="text" v-on:keyup="search()" placeholder="Search..."  v-model="searchterm" class="round">
       <p>{{message}}</p>
       <List name="" type="writer" :json="displayed"/>
     </div>
@@ -82,4 +82,14 @@ input[type=text] {
   width: 50%;
 }
 
+input {
+    width: 100%;
+    border-radius: 15px;
+    border: 1px #000 solid;
+    padding: 5px 5px 5px 25px;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    outline: none;
+}
 </style>

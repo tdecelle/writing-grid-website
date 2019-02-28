@@ -56,4 +56,15 @@
   #nav a.router-link-exact-active {
     background-color: #4fc14d;
   }
+
+  input {
+    width: 100%;
+    border-radius: 15px;
+    border: 1px #000 solid;
+    padding: 5px 5px 5px 25px;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    outline: none;
+  }
 </style>
