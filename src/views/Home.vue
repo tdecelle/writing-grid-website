@@ -1,9 +1,14 @@
 <template>
   <div class="home">
-    <List name="Top Edits" type="edit" :json="edits"/>
-    <Homepage/>
-    <List name="Top Writers" type="writer" :json="writers"/>
-    <List name="Top Listings" type="listing" :json="listings" />
+    <List name="Recent Edits" class="leftpane" type="edit" :json="edits"/>
+    <!--<Homepage/>-->
+    <div class="middlepane">
+      <h1>Writing Grid</h1>
+      <h3>Write - Edit - Connect</h3>
+      <img src="../assets/writing-icon.png" alt="icon">
+      <List name="Top Writers" type="writer" :json="writers"/>
+    </div>
+    <List name="New Job Listings" class="rightpane" type="listing" :json="listings" />
   </div>
 </template>
 
@@ -30,3 +35,33 @@
   })
   export default class Home extends Vue {}
 </script>
+
+<style scoped>
+
+.leftpane {
+    width: 25%;
+    height: 100%;
+    float: left;
+    border-collapse: collapse;
+}
+
+.middlepane {
+    text-align: center;
+    width: 34%;
+    height: 100%;
+    float: left;
+    border-collapse: collapse;
+}
+
+.rightpane {
+  width: 35%;
+  height: 100%;
+  position: relative;
+  float: right;
+  border-collapse: collapse;
+}
+
+img{
+  width:230px;
+}
+</style>
