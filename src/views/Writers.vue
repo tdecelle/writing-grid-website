@@ -71,7 +71,7 @@ input[type=text] {
 
 .search{
   text-align:center;
-  background-color: #b7b7b7;
+  background-color: #cccccc;
   border-radius: 25px;
   margin-top: 10px;
   float: left;
